@@ -1,0 +1,19 @@
+header {
+	text-transform: uppercase;
+	float: right;
+	text-align: right;
+}
+
+header h2 {
+	font-size: 16px;
+}
+
+.logo {
+	float: right;
+}
+
+.hero img {
+	padding-left: 10px; padding-right: 10px;
+	width: 100%;
+	height: 50%;
+}
