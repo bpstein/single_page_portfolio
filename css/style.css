@@ -74,7 +74,6 @@ header h2 {
   margin-top: 20px;
 }
 
-
 /***** HERO IMAGE STYLING *****/
 .hero {
   height: 45%;
@@ -93,34 +92,23 @@ h3 {
 	color: #BCBBBB;
 }
 
-.flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-}
-
 .row ul {
+	margin: 0;
+	padding: 0;
 	margin-top: -15px;
-}
-
-.space-between { 
+	list-style: none;
+	-ms-box-orient: horizontal;
+	display: flex;
+	flex-wrap: wrap;
   -webkit-justify-content: space-between; 
-  justify-content: space-between; 
-}   
+		   		justify-content: space-between;
+}
 
 .flex-item {
-  width: 355px;
-  margin: 0px;
-  color: white;
-  font-weight: bold;
-  text-align: center;
+  height: 300px;
+  flex: 1;
+  min-width: 30%
+	text-align: center;
 }
 
 .label {
@@ -134,5 +122,15 @@ h3 {
 .link {
 	font-size: 16px;
 	font-weight: 100;
+}
+
+.label, .link, a {
+	text-align: center;
+	text-decoration: none;
 	color: #747704;
 }
+
+.overlay {
+
+}
+
