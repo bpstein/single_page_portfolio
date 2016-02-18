@@ -93,12 +93,14 @@ h3 {
 }
 
 .row ul {
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	margin-top: -15px;
 	list-style: none;
 	-ms-box-orient: horizontal;
 	display: flex;
+	flex-direction: row;
+  align-items: stretch;
 	flex-wrap: wrap;
   -webkit-justify-content: space-between; 
 		   		justify-content: space-between;
@@ -117,6 +119,7 @@ h3 {
 	color: #747704;
 	text-transform: uppercase;
 	padding: 5px 0 0 0;
+	display: block;
 }
 
 .link {
@@ -128,9 +131,56 @@ h3 {
 	text-align: center;
 	text-decoration: none;
 	color: #747704;
+	position: relative;
 }
 
-.overlay {
+#tictactoe, #streetfighter, #cage {  
+	width:355px;
+  height:200px;
+  box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
+  background-size: cover;
+	overflow:hidden;
+}
 
+#tictactoe {background: url(http://www.fillmurray.com/355/200);}
+#streetfighter {background: url(https://placekitten.com/355/200);}
+#cage {background: url(http://www.placecage.com/g/355/200);}
+
+.overlay {  
+	background: rgba(248,152,28,.75);
+  text-align: center;
+  padding: 45px 0 66px 0;
+  opacity: 0;
+  -webkit-transition: opacity .45s ease;
+	-moz-transition: opacity .45s ease;
+	display: block;
+}
+
+#tictactoe:hover .overlay, 
+#streetfighter:hover .overlay, 
+#cage:hover .overlay {
+  opacity: 1;
+  z-index: 0;
+}
+
+.plus a {  
+	font-family: Helvetica;
+  font-weight:900;
+  color:rgba(255,255,255,.85);
+  font-size:96px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .label, .link {
+    min-width: 33.33%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .label, .link {
+    min-width: 50%;
+  }
 }
 
