@@ -26,7 +26,7 @@
 
 /***** GLOBAL STYLING *****/
 * {
-  font-family: 'Lato', 'Arial', sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 300;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -75,25 +75,23 @@ header h2 {
 /***** HERO IMAGE STYLING *****/
 .hero {
   height: 45%;
-  width: auto;
+  width: 100%;
   display: block;
   margin: 25px 0 10px 0;
-  background-image:url(../images/hero.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 /***** PROJECTS GALLERY STYLING *****/
 h3 {
 	font-size: 30px;
 	font-weight: 400;
-	color: #BCBBBB;
+	color: #bcbbbb;
 }
 
 .row ul {
 	padding: 0;
 	margin: 0;
-	margin-top: -15px;
+	float: none;
+	left: 0; right: 0;
 	list-style: none;
 	-ms-box-orient: horizontal;
 	display: flex;
@@ -102,17 +100,36 @@ h3 {
 	align-items: center;
 	align-content: stretch;
 	flex-direction: row;
-	align-self: stretch;    
+	align-self: stretch;
 	flex-wrap: wrap;
-  -webkit-justify-content: space-between; 
-		   		justify-content: space-between;
+	justify-content: space-between;
+  -webkit-justify-content: space-between;
 }
 
 .flex-item {
   height: 300px;
   flex: 1;
+  flex-grow: 1;
 	text-align: center;
-	flex-grow: 1;
+}
+
+.image {
+	z-index: -5;
+}
+
+.image:hover {
+	animation-name: bounce; animation-duration: 0.75s;
+}
+
+@keyframes bounce {
+	15% {
+    transform:translateY(0);
+    padding-bottom: 5px;
+	}
+
+	30% {
+	    transform:translateY(-30%);
+	}
 }
 
 .label {
@@ -122,11 +139,14 @@ h3 {
 	text-transform: uppercase;
 	padding: 5px 0 0 0;
 	display: block;
+	margin: 0;
 }
 
 .link {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 100;
+	padding: 5px 0 0 0;
+	margin: 0;
 }
 
 .label, .link, a {
@@ -136,47 +156,16 @@ h3 {
 	position: relative;
 }
 
-#tictactoe, #streetfighter, #cage {  
+#tictactoe, #streetfighter, #cage {
   height:200px;
   box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
   background-size: cover;
 	overflow:hidden;
 }
 
-#tictactoe, 
-#streetfighter, 
+#tictactoe,
+#streetfighter,
 #cage,
 .label, .link, .link a {
 	width:350px;
-} 
-
-#tictactoe {background: url(http://www.fillmurray.com/355/200);}
-#streetfighter {background: url(https://placekitten.com/355/200);}
-#cage {background: url(http://www.placecage.com/g/355/200);}
-
-
-/***** OVERLAY (ON HOVER) STYLING *****/
-.overlay {  
-	background: rgba(248,152,28,.75);
-  text-align: center;
-  padding: 45px 0 66px 0;
-  opacity: 0;
-  -webkit-transition: opacity .45s ease;
-	-moz-transition: opacity .45s ease;
-	display: block;
-}
-
-#tictactoe:hover .overlay, 
-#streetfighter:hover .overlay, 
-#cage:hover .overlay {
-  opacity: 1;
-  z-index: 0;
-}
-
-.plus a {  
-	font-family: Helvetica;
-  font-weight:900;
-  color:rgba(255,255,255,.85);
-  font-size:96px;
-  cursor: pointer;
 }
