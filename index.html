@@ -9,14 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,300,100" rel="stylesheet" type="text/css">
-
-	<!-- jQuery and jQuery UI CDN -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
-	<!-- Custom JavaScript -->
-  <script src="js/app.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100' rel='stylesheet'>
 
   <title>Ben Stein - Portfolio</title>
 </head>
@@ -24,6 +17,7 @@
 <body>
   <div class="grid">
 
+		<!-- Header section -->
     <header class="row">
       <div class="col-3">
         <img src="images/logo.jpg" alt="logo" class="logo">
@@ -34,18 +28,18 @@
       </div>
     </header>
 
+		<!-- Hero image section -->
     <section class="row">
-    	<img src="images/hero.jpg" alt="hero image" class="col-12 hero">
-    </section>
+    	<img src="images/heroHD.jpg" alt="hero image" class="col-12" id="hero-image" srcset="heroHD.jpg 2x">
+   	</section>
 
-    <div class="col-12"><h3 class="row">Featured Work</h3></div>
+		<!-- Featured work list -->
+    <div class="row"><h3 class="col-12">Featured Work</h3></div>
 
     <section class="row">
     	<ul class="col-12">
 				<li class="flex-item">
-			  	<div id="tictactoe">
-			  		<img src="http://www.fillmurray.com/355/200" alt="tictactoe" class="image">
-    			</div>
+			  	<img src="http://www.fillmurray.com/355/200" alt="tictactoe" class="image">
 					<h4 class="label">Tic Tac Toe</h4>
 		  		<p class="link">
 			  		<a href="https://bumstain.github.io/js-tictactoe/" target="_blank">
@@ -54,9 +48,7 @@
 			  </li>
 
 			  <li class="flex-item">
-			  	<div id="streetfighter">
-			  		<img src="https://placekitten.com/355/200" alt="streetfigher" class="image">
-    			</div>
+			  	<img src="https://placekitten.com/355/200" alt="streetfigher" class="image">
 					<h4 class="label">Street Fighter</h4>
 		  		<p class="link">
 			  		<a href="https://bumstain.github.io/jquery-streetfighter/" target="_blank">
@@ -65,18 +57,51 @@
 			  </li>
 
 			  <li class="flex-item">
-			  	<div id="cage">
-			  		<img src="http://www.placecage.com/g/355/200" alt="cage" class="image">
-    			</div>
+			  	<img src="http://www.placecage.com/g/355/200" alt="cage" class="image">
 					<h4 class="label">Cage</h4>
 		  		<p class="link">
 			  		<a href="https://github.com/tjhorner/nicolas-cage" target="_blank">
 			  			https://github.com/tjhorner/nicolas-cage/</a>
 		  		</p>
 			  </li>
+
+			  <li class="flex-item">
+			  	<img src="http://baconmockup.com/355/200" alt="bacon" class="image">
+					<h4 class="label">Bacon</h4>
+		  		<p class="link">
+			  		<a href="https://github.com/baconjs/bacon.js/" target="_blank">
+			  			https://github.com/baconjs/bacon.js/</a>
+		  		</p>
+			  </li>
+
+			  <li class="flex-item">
+			  	<img src="http://lorempixel.com/355/200/sports/" alt="sports" class="image">
+					<h4 class="label">Sports</h4>
+		  		<p class="link">
+			  		<a href="https://github.com/compiler00/SportsDevil-Fixes" target="_blank">
+			  			https://github.com/compiler00/SportsDevil-Fixes</a>
+		  		</p>
+			  </li>
+
+			  <li class="flex-item">
+			  	<img src="http://lorempixel.com/355/200/" alt="random" class="image">
+					<h4 class="label">Hot or Cold</h4>
+		  		<p class="link">
+			  		<a href="https://github.com/bumstain/hot-or-cold-starter/" target="_blank">
+			  			https://github.com/bumstain/hot-or-cold-starter/</a>
+		  		</p>
+			  </li>
 			</ul>
     </section>
 
   </div>
+
+  <!-- jQuery and jQuery UI CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+	<!-- Custom JavaScript -->
+  <script src="js/app.js"></script>
+
 </body>
 </html>

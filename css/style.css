@@ -26,7 +26,7 @@
 
 /***** GLOBAL STYLING *****/
 * {
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: "Roboto Slab", "Arial", sans-serif;
   font-weight: 300;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -44,11 +44,11 @@ body,
 header {
   text-transform: uppercase;
   text-align: right;
-  border-bottom: 3px solid #bcbbbb;
+  border-bottom: 3px solid #1c0221;
 }
 
 header h1, h2 {
-	color: #747704;
+	color: #9e2b25;
 }
 
 h1 {
@@ -73,7 +73,7 @@ header h2 {
 }
 
 /***** HERO IMAGE STYLING *****/
-.hero {
+#hero-image {
   height: 45%;
   width: 100%;
   display: block;
@@ -84,7 +84,7 @@ header h2 {
 h3 {
 	font-size: 30px;
 	font-weight: 400;
-	color: #bcbbbb;
+	color: #7b5e7b;
 }
 
 .row ul {
@@ -113,29 +113,24 @@ h3 {
 	text-align: center;
 }
 
-.image {
-	z-index: -5;
-}
-
 .image:hover {
 	animation-name: bounce; animation-duration: 0.75s;
 }
 
 @keyframes bounce {
 	15% {
-    transform:translateY(0);
+    transform: translateY(0);
     padding-bottom: 5px;
 	}
 
 	30% {
-	    transform:translateY(-30%);
+	    transform: translateY(-30%);
 	}
 }
 
 .label {
 	font-size: 30px;
 	font-weight: 400;
-	color: #747704;
 	text-transform: uppercase;
 	padding: 5px 0 0 0;
 	display: block;
@@ -149,23 +144,23 @@ h3 {
 	margin: 0;
 }
 
-.label, .link, a {
+.label, 
+.link, 
+a {
 	text-align: center;
 	text-decoration: none;
-	color: #747704;
+	color: #9e2b25;
 	position: relative;
 }
 
-#tictactoe, #streetfighter, #cage {
-  height:200px;
-  box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
-  background-size: cover;
-	overflow:hidden;
+.image,
+.label, 
+.link, 
+.link a {
+	width: 350px;
 }
 
-#tictactoe,
-#streetfighter,
-#cage,
-.label, .link, .link a {
-	width:350px;
+.image {
+	border-radius: 10px;
+	max-width: 100%;
 }
